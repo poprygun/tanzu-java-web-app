@@ -35,7 +35,7 @@ http://tap-gui.tap-ashumilov-cluster.tapdemo.vmware.com
 kubectl get workload  spring-petclinic -n my-apps
 
 ```bash
-tanzu apps workload create tanzu-java-web-app --git-repo https://github.com/poprygun/tanzu-java-web-app.git > config/workload2.yaml
+tanzu apps workload create tanzu-java-web-app --git-repo https://github.com/poprygun/tanzu-java-web-app.git --git-branch master
 ```
 
 
