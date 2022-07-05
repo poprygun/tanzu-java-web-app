@@ -28,20 +28,45 @@ You can hit the spacebar to open the UI in a browser.
 
 ## Tanzu Notes
 
-http://tap-gui.tap-ashumilov-cluster.tapdemo.vmware.com
+- [Provistion TAP environment](http://tap-gui.tap-ashumilov-cluster.tapdemo.vmware.com)
 
+- [TAP GUI](http://tap-gui.tap-ashumilov-cluster.tapdemo.vmware.com/)
 
-
-kubectl get workload  spring-petclinic -n my-apps
+## Show cluster urls and data
 
 ```bash
-tanzu apps workload create tanzu-java-web-app --git-repo https://github.com/poprygun/tanzu-java-web-app.git --git-branch master
+kubectl get secret tap-values -n tap-install -o jsonpath="{.data['tap-values\.yaml']}" | base64 -d
 ```
 
+```bash
+tanzu apps workload create tanzu-java-web-app \
+   --git-repo https://github.com/poprygun/tanzu-java-web-app.git \
+   --git-branch master \
+   --type web \
+   --label app.kubernetes.io/part-of=tanzu-java-web-app \
+   --label apps.tanzu.vmware.com/has-tests=true \
+   --yes \
+   --namespace my-apps
+```
 
-Determine Cluster Name
+## Tail application logs
+
+```bash
+tanzu apps workload tail tanzu-java-web-app --since 10m --timestamp -n my-apps
+```
+
+## Determine Cluster Name
 
 ```bash
 kubectl config view --minify
 ```
+
+## References
+
+[Deploy a Test Workload to a Workload or Unmanaged Cluster](https://tanzucommunityedition.io/docs/v0.12/sample/#deploy-a-test-workload-to-a-workload-or-unmanaged-cluster)
+
+[Tanzu Cluster Commands](https://tanzucommunityedition.io/docs/v0.12/ref-unmanaged-cluster/)
+
+
+
 

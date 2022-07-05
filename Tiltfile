@@ -1,6 +1,6 @@
-SOURCE_IMAGE = os.getenv("SOURCE_IMAGE", default='harbor-repo.vmware.com//tanzu-java-web-app-source')
+SOURCE_IMAGE = os.getenv("SOURCE_IMAGE", default='tapacr.azurecr.io/tap-ashumilov-cluster/apps-29-06-2022-17-15-14-250715341')
 LOCAL_PATH = os.getenv("LOCAL_PATH", default='.')
-NAMESPACE = os.getenv("NAMESPACE", default='default')
+NAMESPACE = os.getenv("NAMESPACE", default='my-apps')
 
 k8s_custom_deploy(
     'tanzu-java-web-app',
@@ -20,3 +20,5 @@ k8s_custom_deploy(
 
 k8s_resource('tanzu-java-web-app', port_forwards=["8080:8080"],
             extra_pod_selectors=[{'serving.knative.dev/service': 'tanzu-java-web-app'}])
+
+allow_k8s_contexts('arn:aws:eks:us-west-1:087368549112:cluster/tap-ashumilov-cluster')
