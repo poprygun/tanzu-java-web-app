@@ -49,6 +49,18 @@ tanzu apps workload create tanzu-java-web-app \
    --namespace my-apps
 ```
 
+## View build logs
+
+```bash
+kp build logs tanzu-java-web-app
+```
+
+## Show Image volnurabilities
+
+```bash
+kubectl get imagescan
+```
+
 ## Tail application logs
 
 ```bash
