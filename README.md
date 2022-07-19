@@ -28,9 +28,11 @@ You can hit the spacebar to open the UI in a browser.
 
 ## Tanzu Notes
 
-- [Provistion TAP environment](http://tap-gui.tap-ashumilov-cluster.tapdemo.vmware.com)
+- [Provistion TAP environment](https://tap-test-bed.svc.eng.vmware.com/job/create-tap-testbed/)
 
 - [TAP GUI](http://tap-gui.tap-ashumilov-cluster.tapdemo.vmware.com/)
+
+- [Tear Down TAP](https://tap-test-bed.svc.eng.vmware.com/job/delete-tap-cluster/)
 
 ## Show cluster urls and data
 
