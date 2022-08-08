@@ -81,6 +81,10 @@ kubectl config view --minify
 
 [Tanzu Cluster Commands](https://tanzucommunityedition.io/docs/v0.12/ref-unmanaged-cluster/)
 
+## ToDos
+
+Experiment with [TCE](https://github.com/p-ssanders/tce-demo)
+
 
 
 
