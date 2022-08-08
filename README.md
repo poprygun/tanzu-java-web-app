@@ -85,6 +85,6 @@ kubectl config view --minify
 
 Experiment with [TCE](https://github.com/p-ssanders/tce-demo)
 
-
+Add [Tanzu Service Bindings DB example](https://github.com/vmware-tanzu/servicebinding/tree/main/samples)
 
 
