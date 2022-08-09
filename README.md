@@ -87,4 +87,9 @@ Experiment with [TCE](https://github.com/p-ssanders/tce-demo)
 
 Add [Tanzu Service Bindings DB example](https://github.com/vmware-tanzu/servicebinding/tree/main/samples)
 
+## TAP Cluster
+
+http://tap-gui.hackaton.tapdemo.vmware.com
+http://spring-petclinic.my-apps.hackaton.tapdemo.vmware.com
+
 

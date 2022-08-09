@@ -6,7 +6,7 @@ metadata:
   labels:
     apps.tanzu.vmware.com/workload-type: web
     apps.tanzu.vmware.com/has-tests: "true"
-    app.kubernetes.io/part-of: tanzu-java-web-app2
+    app.kubernetes.io/part-of: tanzu-java-web-app
 spec:
   params:
   - name: annotations
