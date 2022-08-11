@@ -55,6 +55,8 @@ tanzu apps workload create tanzu-java-web-app \
 
 ```bash
 kp build logs tanzu-java-web-app
+tanzu apps workload tail tanzu-java-web-app -n my-apps
+tanzu apps workload get tanzu-java-web-app --namespace my-apps
 ```
 
 ## Show Image volnurabilities
