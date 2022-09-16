@@ -10,8 +10,8 @@ metadata:
     - tanzu
     - rpm-tools
   annotations:
-    'gitlab.com/project-slug': 'vmware-navigator-practice/tooling/client-profile'
-    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=client-profile'
+    gitlab.eng.vmware.com/project-slug: vmware-navigator-practice/tooling/client-profile
+    backstage.io/kubernetes-label-selector: app.kubernetes.io/part-of=client-profile
 spec:
   type: service
   lifecycle: experimental
